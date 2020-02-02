@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: microsoft yahei;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.index {
+  padding: 0 20px;
+}
+.index .continert {
+  width: 100%;
+  margin: 40px auto;
+}
+.index .continert > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  user-select: none;
+}
+.index .continert > ul li {
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: purple;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.index .continert > ul a {
+  font-size: 18px;
+  display: block;
+  padding: 10px 10px;
+  color: white;
+}
+.index .continert > ul li:hover {
+  opacity: 1;
+}
+.index .introduction > div {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.index .introduction > div .title {
+  cursor: pointer;
+  user-select: none;
+}
+.index .introduction > div .title:hover {
+  height: 100px;
+  transition: height 0.3s;
+}
+
+.default > .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.default > .title a:hover {
+  color: #007aff;
+}
+
+/*# sourceMappingURL=carousel.css.map */

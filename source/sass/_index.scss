@@ -1,0 +1,81 @@
+// 定义全局变量
+$width: 100%;
+$txtColor: white;
+$bgColor: purple;
+
+// 首页样式
+.index {
+  padding: 0 20px;
+
+  // 内容区域
+  .continert {
+    width: $width;
+    margin: 40px auto;
+
+    // ul 加载列表样式
+    & > ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      user-select: none;
+
+      // li 列表
+      li {
+        margin: 10px 0;
+        border-radius: 4px;
+        background-color: $bgColor;
+        opacity: .7;
+        transition: opacity .2s;
+      }
+      // a 超链接
+      a {
+        font-size: 18px;
+        display: block;
+        padding: 10px 10px;
+        color: $txtColor;
+      }
+
+      // 伪类样式 ul 下所有
+      li:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  // 简介介绍
+  .introduction {
+
+    // h5 标题
+    & > div {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 5px 10px;
+
+      // 标题
+      .title {
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .title:hover {
+        height: 100px;
+        transition: height .3s;
+      }
+
+    }
+  }
+
+}
+
+.default > .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.default > .title a:hover {
+  color: #007aff;
+}
+
+

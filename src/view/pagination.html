@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pagination</title>
+  <link rel="stylesheet" href="../css/carousel.css">
+  <link rel="stylesheet" href="../../plugins/swiper.css">
+</head>
+<body>
+  
+<div class="default">
+  <div class="title">
+    <h1>分页切换</h1>
+    <h1><a href="../../">返回首页</a></h1>
+  </div>
+
+  <!-- style css start -->
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+  <!-- style cee end -->
+  <!-- swiper html start -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-color: orange;"></div>
+      <div class="swiper-slide" style="background-color: purple;"></div>
+      <div class="swiper-slide" style="background-color: brown;"></div>
+      <div class="swiper-slide" style="background-color: red;"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- swiper html end -->
+</div>
+
+<script src="../../plugins/swiper.js"></script>
+<script>
+
+  let swiper = new Swiper(".swiper-container", {
+    // 每个 div 之间的间隔
+    // spaceBetween: 10,
+    // 添加左右箭头对象
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    // 分页
+    pagination: {
+      el: ".swiper-pagination",
+      // 分页点击切换
+      clickable: true
+    }
+  });
+
+</script>
+
+</body>
+</html>
